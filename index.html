@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!------- title -------->
+    <title>Yummy</title>
+    <!------- favicon -------->
+    <link rel="icon" href="css/img/logo.png">
+
+    <!------- google fonts -------->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!------- css -------->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+  </head>
+  
+<body class="body">
+
+<!-------------------Navbar---------------------->
+
+    <div class="open position-fixed">
+
+        <ul class="p-5 list-unstyled">
+          <i class="Close fa-solid fa-eye  position-absolute"></i>
+          <li onclick="showSearchInputs()" class="p-2"><a href="#">Search</a> </li>
+          <li onclick="getCategories()" class="p-2"><a href="#">Categories</a></li>
+          <li onclick="getArea()" class="p-2"><a href="#">Area</a></li>
+          <li onclick="getIngredients()" class="p-2"><a href="#">Ingredients</a></li>
+          <li class="p-2"><a href="#">Contact Us</a></;i>
+        </ul>
+        
+        <div class="open-icon position-absolute text-white">
+           <img src="css/img/logo.png" class="w-75 m-1" alt="">
+           <i class="icon fas fa-bars "></i> <span></span>
+           <i class="fa-solid fa-globe globe "></i>
+           <i class="fa-regular fa-share-from-square share "></i>
+        </div>
+        
+        <footer class="icons-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook p-2"></i>
+            <i class="fa-brands fa-twitter p-2"></i>
+            <i class="fa-solid fa-globe p-2"></i>
+          </div>
+          <div class="footer">
+            <p class="heba">Copyright 2024. Designed by<span class="color-heba ms-2">ℍ𝔼𝔹𝔸 𝔸𝕎𝔸𝔻</span><img class="m-2" src="css/butterfly 5.png" alt="">, All rights reserved. </p>
+          </div>
+        </footer>
+       
+    </div>
+    
+
+<!--------------------- SEARCH -------------------->
+<div class="w-75 d-none" id="searchContainer">
+  <div class="container pt-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search By Name"
+          id="searchByName"
+          oninput="searchByName()"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search By First Letter"
+          id="searchByLetter"
+          maxlength="1"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------- Home -------------------->
+
+    <header id="home"  class="min-vh-100 position-relative p-4" >
+      <div class="container">
+        <div class="row gy-5" id="all-food">
+          
+        </div>
+      </div>
+
+      </header>
+
+
+</body>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</html>
